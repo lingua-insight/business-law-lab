@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#16394c">
+<meta name="description" content="商法导论全课程双语学习资源：16个内容单元、双语词卡、模拟案例、最高人民法院指导性案例及流程实训。">
+<title>商法实训室 · Business Law Studio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳至学习内容</a>
+<aside class="sidebar">
+  <a class="brand" href="#map"><span class="brand-symbol" aria-hidden="true">法</span><span>商法实训室<small>BUSINESS LAW STUDIO</small></span></a>
+  <p class="course-label">云南财经大学 · 商法导论</p>
+  <nav aria-label="主要学习模块">
+    <button class="nav-link active" data-page="map"><span aria-hidden="true">◈</span> 单元学习地图</button>
+    <button class="nav-link" data-page="terms"><span aria-hidden="true">Aa</span> 双语概念词卡</button>
+    <button class="nav-link" data-page="simulations"><span aria-hidden="true">◎</span> 模拟案例研习</button>
+    <button class="nav-link" data-page="guiding"><span aria-hidden="true">§</span> 最高法指导案例</button>
+    <button class="nav-link" data-page="process"><span aria-hidden="true">↗</span> 流程实训</button>
+    <button class="nav-link" data-page="record"><span aria-hidden="true">✓</span> 我的学习记录</button>
+  </nav>
+  <div class="sidebar-bottom"><p>先识别事实，再核对规则。<br>让判断转化为具体行动。</p><small>无需注册 · 本机记录<br>不自动上传学习内容</small></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><span>中国法基础与跨境商业实践</span><span class="edition">课程学习版 <b>2026.11</b></span></header>
+  <main id="main" tabindex="-1">
+    <div id="storage-alert" class="alert" role="status" hidden></div>
+    <section id="map" class="page" aria-labelledby="map-title">
+      <div class="hero"><div><p class="eyebrow">LEARN · APPLY · REVIEW</p><h1 id="map-title">商业问题，<br>有依据地判断。</h1><p class="intro">按单元理解双语概念，在模拟业务中操作，再阅读真实裁判。每一次修改，都留下你自己的学习证据。</p><div class="hero-actions"><button class="primary" id="current-unit">进入本次课 平台与数据保护</button><button class="secondary" data-route="record">查看我的进度</button></div></div><div class="hero-note"><span class="large-number" id="unit-total">16</span><span>内容单元</span><p>主体与公司<br>合同与救济<br>市场与跨境实践</p></div></div>
+      <div class="stats-strip" id="overview-stats" aria-label="课程资源数量"></div>
+      <div class="section-heading"><div><p class="eyebrow">COURSE MAP</p><h2>全课程学习地图</h2></div><label class="compact-label">选择学习阶段<select id="stage-filter"><option value="all">全部阶段</option><option value="foundation">主体与合同基础 U01—U08</option><option value="practice">市场与跨境实践 U09—U16</option></select></label></div>
+      <div class="unit-grid" id="unit-grid"></div>
+      <section class="review-band"><div><h2>考试与复习入口</h2><p>大纲第9次课堂活动为期中考试，第18次为期末复习。它们不另计内容单元。先选需要复习的主题，再比较模拟案答案与自己的初稿。</p></div><div><button class="secondary" id="midterm-review">复习 U01—U08</button><button class="secondary" id="full-review">全课程案例</button></div></section>
+      <p class="small">单元编号按16个内容主题排列。U01—U08对应大纲第1—8次活动，U09—U16对应大纲第10—17次活动。教师授课时可另有内容讲次编号。</p>
+    </section>
+    <section id="terms" class="page" aria-labelledby="terms-title" hidden>
+      <p class="eyebrow">BILINGUAL CONCEPTS</p><h1 id="terms-title">双语概念词卡</h1><p class="intro short">从法律功能理解词义。展开词卡阅读释义与例句，掌握后再标记，收藏还需复习的概念。</p>
+      <div class="toolbar"><label>单元<select id="term-unit" class="unit-select"></select></label><label class="search-field">检索<input id="term-search" type="search" placeholder="输入中文、英文或例句关键词"></label><label>学习状态<select id="term-status"><option value="all">全部词卡</option><option value="review">待掌握</option><option value="mastered">已掌握</option><option value="saved">已收藏</option></select></label></div>
+      <p id="term-count" class="small" aria-live="polite"></p><div class="term-grid" id="term-grid"></div>
+    </section>
+    <section id="simulations" class="page" aria-labelledby="sim-title" hidden>
+      <p class="eyebrow">SIMULATED BUSINESS CASES</p><h1 id="sim-title">模拟案例研习</h1><p class="intro short">以下均为自编教学情境。先写自己的判断，再展开参考分析。合理答案可以不同，关键是事实、规则与行动相互对应。</p>
+      <div class="toolbar"><label>单元<select id="sim-unit" class="unit-select"></select></label><label class="search-field">检索案例<input id="sim-search" type="search" placeholder="案例标题或材料关键词"></label><label>材料语言<select id="sim-language"><option value="both">中英对照</option><option value="zh">中文</option><option value="en">English</option></select></label></div>
+      <div id="sim-list" class="case-list"></div>
+    </section>
+    <section id="guiding" class="page" aria-labelledby="guiding-title" hidden>
+      <p class="eyebrow">SUPREME PEOPLE’S COURT GUIDING CASES</p><h1 id="guiding-title">最高法指导案例</h1><p class="intro short">按编号阅读最高人民法院发布的指导性案例。中英文均为教学摘要，英文不属于官方译本。裁判所用法律与现行规则应分别核对。</p>
+      <div class="toolbar"><label>关联单元<select id="guiding-unit" class="unit-select"></select></label><label class="search-field">检索<input id="guiding-search" type="search" placeholder="编号、案名或争点"></label><label>材料语言<select id="guiding-language"><option value="both">中英对照</option><option value="zh">中文</option><option value="en">English</option></select></label></div>
+      <div id="guiding-coverage" class="unit-summary" role="status"></div><div id="guiding-list" class="case-list"></div>
+    </section>
+    <section id="process" class="page" aria-labelledby="process-title" hidden>
+      <p class="eyebrow">WORKFLOW PRACTICE</p><h1 id="process-title">流程实训</h1><p class="intro short">每个单元都对应一项可以修改的业务流程。先写方案，再逐项核对。勾选代表你完成了自查，不等于获得真实业务合规认证。</p>
+      <div class="toolbar"><label>单元<select id="process-unit" class="unit-select"></select></label></div><div id="process-content"></div>
+    </section>
+    <section id="record" class="page" aria-labelledby="record-title" hidden>
+      <p class="eyebrow">MY LEARNING RECORD</p><h1 id="record-title">我的学习记录</h1><p class="intro short">这里记录当前浏览器中的个人学习过程。网页没有学生注册、云端成绩或全班统计后台。请定期导出，换设备时可自行导入。</p>
+      <div class="record-actions"><button class="primary" id="export-text">导出学习记录 TXT</button><button class="secondary" id="export-json">备份 JSON</button><label class="file-button">导入 JSON<input id="import-record" type="file" accept="application/json,.json"></label><button class="danger-link" id="reset-open">清除本机记录</button></div>
+      <p id="import-feedback" class="small" role="status"></p>
+      <div id="reset-confirm" class="confirm-box" hidden><h2>清除当前浏览器中的学习记录？</h2><p>此操作不会影响已导出的文件。清除后不能在网页中撤销，请先备份。</p><button class="danger" id="reset-confirm-button">确认清除本机记录</button><button class="secondary" id="reset-cancel">保留记录</button></div>
+      <div id="record-content"></div>
+    </section>
+    <noscript><p class="alert">请启用浏览器 JavaScript 以使用词卡、案例和本机学习记录。</p></noscript>
+  </main>
+  <footer><span>商法导论 · 双语学习与业务实训</span><p>法规与案例用于课程学习。真实业务须核对最新规则和完整事实。所有个人练习内容仅保存在本机，托管服务本身的访问日志及服务条款另行适用。</p><a href="#map">返回学习地图</a></footer>
+</div>
+<script src="curriculum.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
